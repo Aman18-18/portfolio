@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Aman Singh - Portfolio</title>
+  <!-- Theme Options: Spring Light (default) and Spring Night -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="portfolio.css"/>
+</head>
+<body>
+<div class="spring-leaves" aria-hidden="true">
+  <span class="leaf leaf-1"></span>
+  <span class="leaf leaf-2"></span>
+  <span class="leaf leaf-3"></span>
+  <span class="leaf leaf-4"></span>
+  <span class="leaf leaf-5"></span>
+  <span class="leaf leaf-6"></span>
+  <span class="leaf leaf-7"></span>
+  <span class="leaf leaf-8"></span>
+  <span class="leaf leaf-9"></span>
+  <span class="leaf leaf-10"></span>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">Aman<span>.</span>Singh</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#profiles">Profiles</a></li>
+    <li><a href="#social">Connect</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+      </svg>
+      <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+      </svg>
+    </button>
+    <button class="nav-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="close-btn" id="closeMenu">&times;</button>
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#projects" onclick="closeMobile()">Projects</a>
+  <a href="#profiles" onclick="closeMobile()">Profiles</a>
+  <a href="#social" onclick="closeMobile()">Connect</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+
+  <div class="hero-eyebrow">Full-Stack Developer &amp; Engineer</div>
+
+  <h1 class="hero-name">
+    Aman<br/>
+    <em>Singh</em>
+  </h1>
+
+  <p class="hero-tagline">
+    Code forged with relentless precision. Every line a declaration of will. Every solution speaks through pure execution.
+  </p>
+
+  <div class="hero-cta">
+    <a href="#projects" class="btn btn-primary">View my work</a>
+    <a href="#social" class="btn btn-ghost">Get in touch</a>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span class="scroll-text">Scroll</span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-header reveal">
+    <span class="section-number">01</span>
+    <h2 class="section-title">About me</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-left reveal">
+      <div class="about-avatar">
+        <img src="luffy.jpg" alt="Luffy" />
+      </div>
+    </div>
+
+    <div class="about-text reveal">
+      <p>
+        <em>"I am not a slave to destiny. Every scar is proof I refuse to break. Every victory confirms I am relentless. My path is carved by will alone."</em>
+      </p>
+      <p>
+        I'm a <strong>Full-Stack JavaScript developer</strong> with a foundation in Node.js,
+        Express, and React, currently deepening my skills in modern web development.
+        I approach every project with a learning-first mindset - prioritising craft,
+        curiosity, and clean code over shortcuts.
+      </p>
+      <p>
+        When I'm not building, I'm solving problems on competitive coding platforms
+        or exploring new frameworks. I believe good software is quiet - it just works.
+      </p>
+
+      <div class="about-tags">
+        <span class="tag">JavaScript</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">React</span>
+        <span class="tag">Express</span>
+        <span class="tag">Next.js</span>
+        <span class="tag">MongoDB</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">Socket.io</span>
+        <span class="tag">Tailwind CSS</span>
+        <span class="tag">REST APIs</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-header reveal">
+    <span class="section-number">02</span>
+    <h2 class="section-title">Selected work</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="projects-grid">
+
+    <!-- PROJECT 1 -->
+    <a href="https://github.com/Aman18-18" target="_blank" rel="noreferrer" class="project-card reveal">
+      <div class="project-meta">
+        <span class="project-number">001</span>
+        <span class="project-status status-live">Live</span>
+      </div>
+      <h3 class="project-title">School Website</h3>
+      <p class="project-desc">
+        A responsive multi-page website for a CBSE-affiliated school featuring
+        admissions via embedded Google Form, EmailJS contact, and animated UI.
+      </p>
+      <div class="project-stack">
+        <span class="stack-pill">Next.js</span>
+        <span class="stack-pill">Tailwind CSS</span>
+        <span class="stack-pill">Framer Motion</span>
+        <span class="stack-pill">EmailJS</span>
+      </div>
+      <div class="project-links">
+        <span class="project-link">GitHub ↗</span>
+      </div>
+    </a>
+
+    <!-- PROJECT 2 -->
+    <a href="https://github.com/Aman18-18" target="_blank" rel="noreferrer" class="project-card reveal">
+      <div class="project-meta">
+        <span class="project-number">002</span>
+        <span class="project-status status-wip">In Progress</span>
+      </div>
+      <h3 class="project-title">Real-time Chat App</h3>
+      <p class="project-desc">
+        Full-stack chat application with rooms, online presence indicators,
+        and real-time message delivery using WebSockets.
+      </p>
+      <div class="project-stack">
+        <span class="stack-pill">React</span>
+        <span class="stack-pill">Socket.io</span>
+        <span class="stack-pill">Node.js</span>
+        <span class="stack-pill">MongoDB</span>
+      </div>
+      <div class="project-links">
+        <span class="project-link">GitHub ↗</span>
+      </div>
+    </a>
+
+    <!-- PROJECT 3 -->
+    <a href="https://github.com/Aman18-18" target="_blank" rel="noreferrer" class="project-card reveal">
+      <div class="project-meta">
+        <span class="project-number">003</span>
+        <span class="project-status status-wip">In Progress</span>
+      </div>
+      <h3 class="project-title">Job Board</h3>
+      <p class="project-desc">
+        Full-stack job listing platform with employer and candidate dashboards,
+        search filters, and application management.
+      </p>
+      <div class="project-stack">
+        <span class="stack-pill">Next.js</span>
+        <span class="stack-pill">PostgreSQL</span>
+        <span class="stack-pill">Prisma</span>
+        <span class="stack-pill">Tailwind</span>
+      </div>
+      <div class="project-links">
+        <span class="project-link">GitHub ↗</span>
+      </div>
+    </a>
+
+    <!-- PROJECT 4 -->
+    <a href="https://github.com/Aman18-18" target="_blank" rel="noreferrer" class="project-card reveal">
+      <div class="project-meta">
+        <span class="project-number">004</span>
+        <span class="project-status status-wip">In Progress</span>
+      </div>
+      <h3 class="project-title">Finance Tracker</h3>
+      <p class="project-desc">
+        Personal finance tracker with transaction categorisation, monthly
+        budget goals, and visual spending analytics.
+      </p>
+      <div class="project-stack">
+        <span class="stack-pill">React</span>
+        <span class="stack-pill">Node.js</span>
+        <span class="stack-pill">MongoDB</span>
+        <span class="stack-pill">Chart.js</span>
+      </div>
+      <div class="project-links">
+        <span class="project-link">GitHub ↗</span>
+      </div>
+    </a>
+
+    <!-- PROJECT 5 -->
+    <a href="https://github.com/Aman18-18" target="_blank" rel="noreferrer" class="project-card reveal">
+      <div class="project-meta">
+        <span class="project-number">005</span>
+        <span class="project-status status-archived">Coming soon</span>
+      </div>
+      <h3 class="project-title">Your Next Project</h3>
+      <p class="project-desc">
+        Duplicate this card and replace it with your own project details.
+        Add a link, tech stack, and description.
+      </p>
+      <div class="project-stack">
+        <span class="stack-pill">Your Stack</span>
+        <span class="stack-pill">Here</span>
+      </div>
+      <div class="project-links">
+        <span class="project-link">GitHub ↗</span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- CODING PROFILES -->
+<section id="profiles">
+  <div class="section-header reveal">
+    <span class="section-number">03</span>
+    <h2 class="section-title">Coding profiles</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <p class="profiles-intro reveal">
+    "The best way to learn is to write code every day - these are the arenas where I practise that belief."
+  </p>
+
+  <div class="profiles-grid">
+
+    <!-- GITHUB -->
+    <a href="https://github.com/Aman18-18" target="_blank" rel="noreferrer" class="profile-card reveal">
+      <div class="profile-icon" style="background:var(--icon-github-bg);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--text-secondary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+        </svg>
+      </div>
+      <div>
+        <div class="profile-name">GitHub</div>
+        <div class="profile-handle">@Aman18-18</div>
+      </div>
+      <div class="profile-stat">View repositories ↗</div>
+    </a>
+
+    <!-- LEETCODE -->
+    <a href="https://leetcode.com/u/Idkaman/" target="_blank" rel="noreferrer" class="profile-card reveal">
+      <div class="profile-icon" style="background:var(--icon-leetcode-bg);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-warm)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.38c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365.497 1.9-.038.535-.536.553-1.387.039-1.901l-2.609-2.636a5.055 5.055 0 0 0-2.445-1.337l2.467-2.503c.516-.514.498-1.366-.037-1.901-.535-.535-1.387-.552-1.902-.038l-10.1 10.101c-.981.982-1.494 2.337-1.494 3.835 0 1.498.513 2.895 1.494 3.875l4.347 4.361c.981.979 2.337 1.452 3.834 1.452s2.853-.512 3.835-1.494l2.609-2.637c.514-.514.496-1.365-.039-1.9s-1.386-.553-1.899-.039zM20.811 13.01H10.666c-.702 0-1.27.604-1.27 1.346s.568 1.346 1.27 1.346h10.145c.701 0 1.27-.604 1.27-1.346s-.569-1.346-1.27-1.346z"/>
+        </svg>
+      </div>
+      <div>
+        <div class="profile-name">LeetCode</div>
+        <div class="profile-handle">@Idkaman</div>
+      </div>
+      <div class="profile-stat">DSA practice ↗</div>
+    </a>
+
+    <!-- CODEFORCES -->
+    <a href="https://codeforces.com/profile/Anonymous03" target="_blank" rel="noreferrer" class="profile-card reveal">
+      <div class="profile-icon" style="background:var(--icon-cf-bg);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-cool)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="12" width="4" height="9" rx="1"/>
+          <rect x="10" y="7" width="4" height="14" rx="1"/>
+          <rect x="17" y="3" width="4" height="18" rx="1"/>
+        </svg>
+      </div>
+      <div>
+        <div class="profile-name">Codeforces</div>
+        <div class="profile-handle">@Anonymous03</div>
+      </div>
+      <div class="profile-stat">Competitive programming ↗</div>
+    </a>
+
+    <!-- CODECHEF -->
+    <a href="https://www.codechef.com/users/annonymous_18" target="_blank" rel="noreferrer" class="profile-card reveal">
+      <div class="profile-icon" style="background:var(--icon-cc-bg);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-earth)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+          <path d="M8 12s1-2 4-2 4 2 4 2"/>
+          <path d="M9 9.5h.01M15 9.5h.01"/>
+        </svg>
+      </div>
+      <div>
+        <div class="profile-name">CodeChef</div>
+        <div class="profile-handle">@annonymous_18</div>
+      </div>
+      <div class="profile-stat">Monthly contests ↗</div>
+    </a>
+
+  </div>
+</section>
+
+<!-- SOCIAL -->
+<section id="social">
+  <div class="section-header reveal">
+    <span class="section-number">04</span>
+    <h2 class="section-title">Let's connect</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="social-strip reveal">
+
+    <!-- GITHUB -->
+    <a href="https://github.com/Aman18-18" target="_blank" rel="noreferrer" class="social-item github">
+      <div class="social-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-earth)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+        </svg>
+      </div>
+      <div class="social-info">
+        <span class="social-label">GitHub</span>
+        <span class="social-handle">@Aman18-18</span>
+      </div>
+      <span class="social-arrow">↗</span>
+    </a>
+
+    <!-- X -->
+    <a href="https://x.com/ykykaman" target="_blank" rel="noreferrer" class="social-item twitter">
+      <div class="social-icon">
+        <svg viewBox="0 0 24 24" fill="var(--accent-warm)" stroke="none">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+      </div>
+      <div class="social-info">
+        <span class="social-label">X</span>
+        <span class="social-handle">@ykykaman</span>
+      </div>
+      <span class="social-arrow">↗</span>
+    </a>
+
+    <!-- LINKEDIN -->
+    <a href="https://www.linkedin.com/in/amansingh1818/" target="_blank" rel="noreferrer" class="social-item linkedin">
+      <div class="social-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-cool)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+          <rect x="2" y="9" width="4" height="12"/>
+          <circle cx="4" cy="4" r="2"/>
+        </svg>
+      </div>
+      <div class="social-info">
+        <span class="social-label">LinkedIn</span>
+        <span class="social-handle">@amansingh1818</span>
+      </div>
+      <span class="social-arrow">↗</span>
+    </a>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p class="footer-left">Crafted with patience &amp; curiosity.</p>
+  <p class="footer-right">© 2026 Aman Singh · Prayagraj, India</p>
+</footer>
+
+<script src="portfolio.js"></script>
+
+</body>
+</html>
