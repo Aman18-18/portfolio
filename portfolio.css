@@ -200,11 +200,6 @@ body > * {
     opacity: 0;
   }
 }
-  box-shadow: 0 12px 24px var(--leaf-shadow);
-  opacity: 0.72;
-  filter: saturate(0.95);
-  animation: leafFall linear infinite;
-}
 
 .leaf::before {
   content: '';
@@ -305,6 +300,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(to bottom, rgba(247, 251, 241, 0.94), rgba(247, 251, 241, 0));
+  -webkit-backdrop-filter: blur(0px);
   backdrop-filter: blur(0px);
   transition: backdrop-filter 0.4s, background 0.4s;
 }
@@ -315,6 +311,7 @@ html[data-theme="dark"] nav {
 
 nav.scrolled {
   background: rgba(247, 251, 241, 0.82);
+  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
@@ -867,7 +864,14 @@ html[data-theme="dark"] .about-avatar:hover {
   font-size: 0.9rem;
   color: var(--text-secondary);
   line-height: 1.7;
-  margin-bottom: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.project-learnings {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
 }
 
 .project-stack {
@@ -976,6 +980,22 @@ html[data-theme="dark"] .about-avatar:hover {
   justify-content: center;
   font-size: 1.3rem;
   position: relative;
+}
+
+.profile-icon.github {
+  background: var(--icon-github-bg);
+}
+
+.profile-icon.leetcode {
+  background: var(--icon-leetcode-bg);
+}
+
+.profile-icon.codeforces {
+  background: var(--icon-cf-bg);
+}
+
+.profile-icon.codechef {
+  background: var(--icon-cc-bg);
 }
 
 .profile-icon svg {

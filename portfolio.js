@@ -3,28 +3,8 @@
    ======================================== */
 
 function initializeTheme() {
-  const savedTheme = localStorage.getItem('theme');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const theme = savedTheme || (prefersDark ? 'dark' : 'light');
-  setTheme(theme);
-}
-
-function setTheme(theme) {
-  const html = document.documentElement;
-
-  if (theme === 'dark') {
-    html.setAttribute('data-theme', 'dark');
-    localStorage.setItem('theme', 'dark');
-    return;
-  }
-
-  html.removeAttribute('data-theme');
-  localStorage.setItem('theme', 'light');
-}
-
-function toggleTheme() {
-  const currentTheme = document.documentElement.getAttribute('data-theme');
-  setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+  document.documentElement.setAttribute('data-theme', 'dark');
+  localStorage.setItem('theme', 'dark');
 }
 
 /* ========================================
@@ -32,7 +12,7 @@ function toggleTheme() {
    ======================================== */
 const themeToggle = document.getElementById('themeToggle');
 if (themeToggle) {
-  themeToggle.addEventListener('click', toggleTheme);
+  themeToggle.remove();
 }
 
 /* ========================================
